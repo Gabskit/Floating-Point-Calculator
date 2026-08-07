@@ -1,0 +1,8 @@
+/* style.css */
+@import "tailwindcss";
+@plugin "flyonui";
+@import "flyonui/variants.css";
+
+/* Tells Tailwind to scan FlyonUI's JS for utility classes */
+@source "./node_modules/flyonui/flyonui.js"; 
+
