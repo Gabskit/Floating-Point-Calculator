@@ -1,8 +1,24 @@
 /* style.css */
 @import "tailwindcss";
-@plugin "flyonui";
+@plugin "flyonui"{
+	themes: all;
+}
 @import "flyonui/variants.css";
 
 /* Tells Tailwind to scan FlyonUI's JS for utility classes */
-@source "./node_modules/flyonui/flyonui.js"; 
+@source "./../node_modules/flyonui/flyonui.js"; 
+@plugin "@iconify/tailwind4";
 
+.bar {
+	display: flex;
+	flex: 1;
+	align-items: center;
+	justify-content: space-around;
+	padding: 5px;}
+
+.squircle-cor {
+	corner-shape: squircle !important;
+	border-radius: 20em;}
+
+.content-sp {
+	padding: 8px;}
