@@ -8,14 +8,16 @@ import Alpine from 'alpinejs';
 window.Alpine = Alpine;
 Alpine.start();
 
-document.querySelector('#app').innerHTML = `
+document.querySelector('#app').innerHTML =`
 <div x-data="{}">
-	<div class="ui-bar-d bar">
+	<div class="ui-bar-d bar flex-1">
 		<h1>Floating Point calculator</h1>
 		<button class="btn glass squircle-cor"><span class="icon-[solar--hamburger-menu-line-duotone]"></span></button>
 	</div>
-	<div class="content-sp">
-		<div class=""></div>
+	<div class="content-sp flex-1">
+		<div></div>
+	</div>
+	<div class="ui-bar-d bar flex-1">
 	</div>
 </div>
 `
